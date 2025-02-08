@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope Generator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#">Astro<span>Logia</span></a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Horoscopes</a></li>
+            <li><a href="#">Zodiac Signs</a></li>
+            <li><a href="#">About</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+    
+
+
+    <div class="container">
+
+
+
+        <h1> Get Your Horoscope </h1>
+
+        <!-- <form> -->
+            <div class="name">
+                <label for="name"> Enter Your Full Name</label> <br>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name..." required> <br>
+            </div>
+
+            <div class="name">
+
+                <label for="name"> Gender </label> <br>
+                <select name="gender" id="gender">
+                    <option value="select" hidden> Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select> <br>
+
+            </div>
+
+            <div class="name">
+
+
+                <label for="dob">Date of Birth</label> <br>
+                <input type="date" id="dob" name="dob" required> <br>
+
+            </div>
+
+            <center>
+
+                <button id="btn" onclick="GetHoroscope()"> Get Horoscope </button>
+            </center>
+
+        <!-- </form> -->
+
+        <div id="horoscope-card" class="horoscope-card hidden">
+            <h2 id="horoscope-name"></h2>
+            <p id="horoscope-details"></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
